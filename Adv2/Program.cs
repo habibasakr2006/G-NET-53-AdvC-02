@@ -65,17 +65,17 @@ namespace Adv2
 
         #region Task 03.2 - Transform Products Method
         // Func<Product, string> is used to transform a Product into a new string representation.
-        static List<string> TransformProducts(List<Product> products, Func<Product, string> transform)
-        {
-            List<string> result = new List<string>();
+        //static List<string> TransformProducts(List<Product> products, Func<Product, string> transform)
+        //{
+        //    List<string> result = new List<string>();
 
-            foreach (Product product in products)
-            {
-                result.Add(transform(product));
-            }
+        //    foreach (Product product in products)
+        //    {
+        //        result.Add(transform(product));
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
         #endregion
 
         #region Task 03.3 - Filter Products Method
