@@ -54,13 +54,13 @@ namespace Adv2
 
         #region Task 03.1 - Print Report Method
         // Action<Product> is used because it performs an action (printing) on each product and returns void.
-        static void PrintReport(List<Product> products, Action<Product> action)
-        {
-            foreach (Product product in products)
-            {
-                action(product);
-            }
-        }
+        //static void PrintReport(List<Product> products, Action<Product> action)
+        //{
+        //    foreach (Product product in products)
+        //    {
+        //        action(product);
+        //    }
+        //}
         #endregion
 
         #region Task 03.2 - Transform Products Method
