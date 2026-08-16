@@ -36,20 +36,20 @@ namespace Adv2
 
         #region Task 01 - Search Products Method
         // Func<Product, bool> is used to accept a filter condition that takes a Product and returns bool.
-        static List<Product> SearchProducts(List<Product> products, Func<Product, bool> filter)
-        {
-            List<Product> result = new List<Product>();
+        //static List<Product> SearchProducts(List<Product> products, Func<Product, bool> filter)
+        //{
+        //    List<Product> result = new List<Product>();
 
-            foreach (Product product in products)
-            {
-                if (filter(product))
-                {
-                    result.Add(product);
-                }
-            }
+        //    foreach (Product product in products)
+        //    {
+        //        if (filter(product))
+        //        {
+        //            result.Add(product);
+        //        }
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
         #endregion
 
         #region Task 03.1 - Print Report Method
