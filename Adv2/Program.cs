@@ -204,16 +204,16 @@ namespace Adv2
 
             #region Task 03.3 - Filter Products Execution
 
-            Console.WriteLine("--- Low-Stock Alert ---");
-            List<Product> lowStockProducts = FilterProducts(
-                catalog,
-                product => product.Stock < 20
-            );
+            //Console.WriteLine("--- Low-Stock Alert ---");
+            //List<Product> lowStockProducts = FilterProducts(
+            //    catalog,
+            //    product => product.Stock < 20
+            //);
 
-            foreach (Product product in lowStockProducts)
-            {
-                Console.WriteLine($"[LOW STOCK] {product.Name}: only {product.Stock} left!");
-            }
+            //foreach (Product product in lowStockProducts)
+            //{
+            //    Console.WriteLine($"[LOW STOCK] {product.Name}: only {product.Stock} left!");
+            //}
 
             #endregion
 
