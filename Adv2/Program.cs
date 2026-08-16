@@ -80,20 +80,20 @@ namespace Adv2
 
         #region Task 03.3 - Filter Products Method
         // Predicate<Product> is a built-in delegate specifically designed for condition testing (returns bool).
-        static List<Product> FilterProducts(List<Product> products, Predicate<Product> predicate)
-        {
-            List<Product> result = new List<Product>();
+        //static List<Product> FilterProducts(List<Product> products, Predicate<Product> predicate)
+        //{
+        //    List<Product> result = new List<Product>();
 
-            foreach (Product product in products)
-            {
-                if (predicate(product))
-                {
-                    result.Add(product);
-                }
-            }
+        //    foreach (Product product in products)
+        //    {
+        //        if (predicate(product))
+        //        {
+        //            result.Add(product);
+        //        }
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
         #endregion
 
         #endregion
