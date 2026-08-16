@@ -3,17 +3,20 @@ using System.Collections.Generic;
 
 namespace Adv2
 {
-    public class Product
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Category { get; set; }
-        public double Price { get; set; }
-        public int Stock { get; set; }
-    }
+    #region Models
+    //public class Product
+    //{
+    //    public int Id { get; set; }
+    //    public string Name { get; set; }
+    //    public string Category { get; set; }
+    //    public double Price { get; set; }
+    //    public int Stock { get; set; }
+    //}
+    #endregion
 
     internal class Program
     {
+        #region Catalog Data
         static List<Product> catalog = new List<Product>
         {
             new Product { Id = 1, Name = "Laptop", Category = "Electronics", Price = 1200, Stock = 10 },
@@ -27,8 +30,12 @@ namespace Adv2
             new Product { Id = 9, Name = "Headphones", Category = "Electronics", Price = 150, Stock = 40 },
             new Product { Id = 10, Name = "Jacket", Category = "Clothing", Price = 120, Stock = 15 }
         };
+        #endregion
 
-        // Task 01: Func<Product, bool> is used to represent custom filtering condition that takes a Product and returns a boolean.
+        #region Delegate Methods
+
+        #region Task 01 - Search Products Method
+        // Func<Product, bool> is used to accept a filter condition that takes a Product and returns bool.
         static List<Product> SearchProducts(List<Product> products, Func<Product, bool> filter)
         {
             List<Product> result = new List<Product>();
@@ -43,8 +50,10 @@ namespace Adv2
 
             return result;
         }
+        #endregion
 
-        // Task 03.1: Action<Product> is used because the delegate performs an operation (printing) and returns void.
+        #region Task 03.1 - Print Report Method
+        // Action<Product> is used because it performs an action (printing) on each product and returns void.
         static void PrintReport(List<Product> products, Action<Product> action)
         {
             foreach (Product product in products)
@@ -52,8 +61,10 @@ namespace Adv2
                 action(product);
             }
         }
+        #endregion
 
-        // Task 03.2: Func<Product, string> is used to project/transform a Product into a new string representation.
+        #region Task 03.2 - Transform Products Method
+        // Func<Product, string> is used to transform a Product into a new string representation.
         static List<string> TransformProducts(List<Product> products, Func<Product, string> transform)
         {
             List<string> result = new List<string>();
@@ -65,8 +76,10 @@ namespace Adv2
 
             return result;
         }
+        #endregion
 
-        // Task 03.3: Predicate<Product> is used as a built-in delegate specifically suited for testing criteria (returns bool).
+        #region Task 03.3 - Filter Products Method
+        // Predicate<Product> is a built-in delegate specifically designed for condition testing (returns bool).
         static List<Product> FilterProducts(List<Product> products, Predicate<Product> predicate)
         {
             List<Product> result = new List<Product>();
@@ -81,10 +94,13 @@ namespace Adv2
 
             return result;
         }
+        #endregion
+
+        #endregion
 
         static void Main(string[] args)
         {
-            #region Task 01
+            #region Task 01 - Smart Product Search Execution
 
             Console.WriteLine("--- Electronics ---");
             List<Product> electronics = SearchProducts(
@@ -136,7 +152,7 @@ namespace Adv2
 
             #endregion
 
-            #region Task 03.1
+            #region Task 03.1 - Print Reports Execution
 
             Console.WriteLine("--- Short Report ---");
             PrintReport(
@@ -158,7 +174,7 @@ namespace Adv2
 
             #endregion
 
-            #region Task 03.2
+            #region Task 03.2 - Transform Products Execution
 
             Console.WriteLine("--- Summary List ---");
             List<string> summaryList = TransformProducts(
@@ -186,7 +202,7 @@ namespace Adv2
 
             #endregion
 
-            #region Task 03.3
+            #region Task 03.3 - Filter Products Execution
 
             Console.WriteLine("--- Low-Stock Alert ---");
             List<Product> lowStockProducts = FilterProducts(
