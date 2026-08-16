@@ -154,51 +154,51 @@ namespace Adv2
 
             #region Task 03.1 - Print Reports Execution
 
-            Console.WriteLine("--- Short Report ---");
-            PrintReport(
-                catalog,
-                product => Console.WriteLine($"{product.Name} - ${product.Price}")
-            );
+            //Console.WriteLine("--- Short Report ---");
+            //PrintReport(
+            //    catalog,
+            //    product => Console.WriteLine($"{product.Name} - ${product.Price}")
+            //);
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            Console.WriteLine("--- Detailed Report ---");
-            PrintReport(
-                catalog,
-                product => Console.WriteLine(
-                    $"[{product.Category}] {product.Name} | Price: ${product.Price} | Stock: {product.Stock}"
-                )
-            );
+            //Console.WriteLine("--- Detailed Report ---");
+            //PrintReport(
+            //    catalog,
+            //    product => Console.WriteLine(
+            //        $"[{product.Category}] {product.Name} | Price: ${product.Price} | Stock: {product.Stock}"
+            //    )
+            //);
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            #endregion
+            //#endregion
 
-            #region Task 03.2 - Transform Products Execution
+            //#region Task 03.2 - Transform Products Execution
 
-            Console.WriteLine("--- Summary List ---");
-            List<string> summaryList = TransformProducts(
-                catalog,
-                product => $"{product.Name} (${product.Price})"
-            );
-            foreach (string item in summaryList)
-            {
-                Console.WriteLine(item);
-            }
+            //Console.WriteLine("--- Summary List ---");
+            //List<string> summaryList = TransformProducts(
+            //    catalog,
+            //    product => $"{product.Name} (${product.Price})"
+            //);
+            //foreach (string item in summaryList)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            Console.WriteLine("--- Price Labels ---");
-            List<string> priceLabels = TransformProducts(
-                catalog,
-                product => $"{product.Name}: {(product.Price > 100 ? "Expensive!" : "Affordable")}"
-            );
-            foreach (string item in priceLabels)
-            {
-                Console.WriteLine(item);
-            }
+            //Console.WriteLine("--- Price Labels ---");
+            //List<string> priceLabels = TransformProducts(
+            //    catalog,
+            //    product => $"{product.Name}: {(product.Price > 100 ? "Expensive!" : "Affordable")}"
+            //);
+            //foreach (string item in priceLabels)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
             #endregion
 
