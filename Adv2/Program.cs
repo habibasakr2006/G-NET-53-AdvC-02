@@ -102,53 +102,53 @@ namespace Adv2
         {
             #region Task 01 - Smart Product Search Execution
 
-            Console.WriteLine("--- Electronics ---");
-            List<Product> electronics = SearchProducts(
-                catalog,
-                product => product.Category == "Electronics"
-            );
-            foreach (Product product in electronics)
-            {
-                Console.WriteLine($"{product.Name} - ${product.Price} (Stock: {product.Stock})");
-            }
+            //Console.WriteLine("--- Electronics ---");
+            //List<Product> electronics = SearchProducts(
+            //    catalog,
+            //    product => product.Category == "Electronics"
+            //);
+            //foreach (Product product in electronics)
+            //{
+            //    Console.WriteLine($"{product.Name} - ${product.Price} (Stock: {product.Stock})");
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            Console.WriteLine("--- Under $50 ---");
-            List<Product> under50 = SearchProducts(
-                catalog,
-                product => product.Price < 50
-            );
-            foreach (Product product in under50)
-            {
-                Console.WriteLine($"{product.Name} - ${product.Price} (Stock: {product.Stock})");
-            }
+            //Console.WriteLine("--- Under $50 ---");
+            //List<Product> under50 = SearchProducts(
+            //    catalog,
+            //    product => product.Price < 50
+            //);
+            //foreach (Product product in under50)
+            //{
+            //    Console.WriteLine($"{product.Name} - ${product.Price} (Stock: {product.Stock})");
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            Console.WriteLine("--- In Stock ---");
-            List<Product> inStock = SearchProducts(
-                catalog,
-                product => product.Stock > 0
-            );
-            foreach (Product product in inStock)
-            {
-                Console.WriteLine($"{product.Name} - ${product.Price} (Stock: {product.Stock})");
-            }
+            //Console.WriteLine("--- In Stock ---");
+            //List<Product> inStock = SearchProducts(
+            //    catalog,
+            //    product => product.Stock > 0
+            //);
+            //foreach (Product product in inStock)
+            //{
+            //    Console.WriteLine($"{product.Name} - ${product.Price} (Stock: {product.Stock})");
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            Console.WriteLine("--- Clothing Under $100 ---");
-            List<Product> clothingUnder100 = SearchProducts(
-                catalog,
-                product => product.Category == "Clothing" && product.Price < 100
-            );
-            foreach (Product product in clothingUnder100)
-            {
-                Console.WriteLine($"{product.Name} - ${product.Price} (Stock: {product.Stock})");
-            }
+            //Console.WriteLine("--- Clothing Under $100 ---");
+            //List<Product> clothingUnder100 = SearchProducts(
+            //    catalog,
+            //    product => product.Category == "Clothing" && product.Price < 100
+            //);
+            //foreach (Product product in clothingUnder100)
+            //{
+            //    Console.WriteLine($"{product.Name} - ${product.Price} (Stock: {product.Stock})");
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
             #endregion
 
